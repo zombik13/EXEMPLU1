@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    display: none;
+
+}
+    .show-menu{
+        display: block;
+    }
+
+    .burger-menu{
+       margin-right: 0%;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+@media (max-width:768px) {
+    nav ul{
+        flex: 1;
+                justify-content: flex-start;
+
+    }
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .menu-toggle{
+        display: inline-block;
+        cursor: pointer;
+    }
+    .active{
+        color: #ff9800;
+    }
+    .cart {
+        order: 2; /* Mută cart pe dreapta */
+    }
+}
